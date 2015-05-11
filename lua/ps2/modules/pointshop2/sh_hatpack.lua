@@ -9,3 +9,10 @@ hook.Add( "PS2_ModulesLoaded", "DLC_Hats", function( )
 		end 
 	} )
 end )
+
+hook.Add( "PS2_PopulateCredits", "AddHatCredits", function( panel )
+	panel:AddCreditSection( "Pointshop 2 Hatpack", [[
+Pack development sponsored by Th3Mastermind of the PiC community (http://steamcommunity.com/profiles/76561198011132866).
+All Hats carefully positioned by Trips (https://github.com/TripsLetash)
+	]] )
+end )
